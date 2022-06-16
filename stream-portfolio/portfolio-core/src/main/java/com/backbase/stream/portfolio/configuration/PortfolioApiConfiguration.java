@@ -84,7 +84,6 @@ public class PortfolioApiConfiguration {
     ApiClient portfolioApiClient(WebClient dbsWebClient, ObjectMapper objectMapper, DateFormat dateFormat) {
         ApiClient apiClient = new ApiClient(dbsWebClient, objectMapper, dateFormat);
         apiClient.setBasePath(backbaseStreamConfigurationProperties.getDbs().getPortfolioBaseUrl());
-//        apiClient.setBasePath("http://localhost:8083");
         return apiClient;
     }
 

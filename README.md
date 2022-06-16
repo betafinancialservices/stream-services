@@ -14,6 +14,7 @@ Currently the following DBS services are exposed as Stream Components:
 * [Stream Legal Entity](stream-cursor/readme.md) (Lib, Rest, Sink) → Legal Entity Ingestion Service that orchestrate all calls to DBS from a single aggregate model. This service is exposed as a library, REST full service and as a Sink. Supports retry of the aggregate and uses the Legal Entity Ingestion Model to have a single interface into DBS. Requires Access Control, Product Summary
 * [Stream Product Catalog](stream-cursor/readme.md) (Lib, Rest, Task) → Enabled bootstrapping of product types into DBS. Product Types are currently hardcoded in the streamTask definition. Orchestrates calls into Product Summary
 * [Stream Transactions](stream-transactions) (Lib, Rest, Sink) → Allows ingestion into DBS in a controlled way with support for retry, rate limiting and configurable batch sizes. 
+* [Stream Portfolio](stream-portfolio) (Lib) → Allows ingestion into DBS in a controlled way.
 
 ## Stream API Documentation
 
@@ -26,6 +27,7 @@ You can find listed here the API specification containing the opinionated model 
 | stream-approvals       | [openapi.yaml](api/stream-approvals/openapi.yaml)       | [Ingest Approval API](https://engineering.backbase.com/stream-services/api/stream-approvals/index.html)           |
 | stream-product-catalog | [openapi.yaml](api/stream-product-catalog/openapi.yaml) | [Product Catalog API](https://engineering.backbase.com/stream-services/api/stream-product-catalog/index.html)     |
 | stream-transactions    | [openapi.yaml](api/stream-transactions/openapi.yaml)    | [Transactions Ingestion API](https://engineering.backbase.com/stream-services/api/stream-transactions/index.html) |
+| stream-portfolio       | [openapi.yaml](api/stream-portfolio/openapi.yaml)    | [Portfolio Ingestion API](https://engineering.backbase.com/stream-services/api/stream-portfolio/index.html)    |
 
 ## Supported DBS versions
 
