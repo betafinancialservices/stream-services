@@ -1,0 +1,8 @@
+backbase:
+  stream:
+    dbs:
+      portfolio-base-url: http://localhost:8083
+
+logging:
+  level:
+    root: INFO

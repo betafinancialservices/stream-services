@@ -122,8 +122,8 @@ public class DbsWebClientConfiguration {
                     return exchangeFunction.exchange(contextRequest);
                 });
             })
-            .filter(new CsrfClientExchangeFilterFunction())
-            .filter(oauth2ClientFilter);
+            .filter(new CsrfClientExchangeFilterFunction());
+//            .filter(oauth2ClientFilter);
 
         if (log.isDebugEnabled()) {
             HttpClient httpClient = HttpClient
