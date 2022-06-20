@@ -52,6 +52,7 @@ public class InstrumentApiConfiguration {
     @Bean
     ApiClient instrumentApiClient(WebClient dbsWebClient, ObjectMapper objectMapper, DateFormat dateFormat) {
         ApiClient apiClient = new ApiClient(dbsWebClient, objectMapper, dateFormat);
+        log.debug("Instrument Api Client Stream Configuration Properties: {}", backbaseStreamConfigurationProperties);
         apiClient.setBasePath(backbaseStreamConfigurationProperties.getDbs().getPortfolioBaseUrl());
         return apiClient;
     }
